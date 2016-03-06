@@ -29,13 +29,9 @@ function __dpaste_set_defaults
 end
 
 function __dpaste_send
-  function curl
-    command curl --silent $argv
-  end
-
-  curl -F "$__dpaste_keyword=<-" $__dpaste_send_url | read -l url
+  curl --silent -F "$__dpaste_keyword=<-" $__dpaste_send_url | read -l url
   if [ $__dpaste_eat_once = 1 ]
-    curl $url >/dev/null
+    curl --silent $url >/dev/null
   end
   echo $url
 end
