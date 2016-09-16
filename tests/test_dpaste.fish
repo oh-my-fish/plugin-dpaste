@@ -101,7 +101,7 @@ end
 if not set -q tank_running
   source (dirname (status -f))/helper.fish
   set -g __dpaste_expires_choises
-  source (dirname (status -f))/../dpaste.fish
+  source (dirname (status -f))/../functions/*
 
   dpaste_setup
   tank_run
