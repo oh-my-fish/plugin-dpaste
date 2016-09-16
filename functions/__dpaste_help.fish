@@ -1,10 +1,10 @@
 function __dpaste_help
   echo -e \
-"Usage:
-  dpaste [-t EXPIRES] < README.md
-  dpaste [-t EXPIRES] README.md
-  cat README.md | dpaste [-t EXPIRES]
-  dpaste [-t EXPIRES] \"I \<3 to paste\"
+"Examples:
+  dpaste \"I \<3 to paste\"
+  dpaste -t week README.md
+  dpaste -t onetime < README.md
+  cat README.md | dpaste -t month
 
 Options:
   -t --time EXPIRES  set snippet expiration time: $__dpaste_expires_choises [default: month]

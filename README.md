@@ -9,6 +9,7 @@
 
 <br/>
 
+Package allows to quickly share text on pastebin sites dpaste.de (and similar), sprunge.us.
 
 ## Install
 
@@ -22,11 +23,17 @@ $ omf install dpaste
 Basice usage:
 
 ```fish
-$ dpaste file
-https://dpaste.de/CODE
+$ dpaste "I <3 to paste"
+https://dpaste.de/ID0
+$ dpaste -t week README.md
+https://dpaste.de/ID1
+$ dpaste -t onetime < README.md
+https://dpaste.de/ID2
+$ cat README.md | dpaste -t month
+https://dpaste.de/ID3
 ```
 
-For more examples see:
+For more information see:
 
 ```fish
 $ dpaste --help
