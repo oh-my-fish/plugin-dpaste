@@ -3,6 +3,8 @@ set -g __dpaste_url_dpaste_de 'https://dpaste.de/api/'
 set -g __dpaste_keyword_dpaste_de 'content'
 set -g __dpaste_url_sprunge_us 'http://sprunge.us/'
 set -g __dpaste_keyword_sprunge_us 'sprunge'
+set -g __dpaste_url_gist_github_com 'https://api.github.com/gists'
+set -g __dpaste_keyword_gist_github_com 'github'
 
 set -q dpaste_site; or set -g dpaste_site 'dpaste.de'
 set suffix (echo $dpaste_site | sed "s/\./_/g")
