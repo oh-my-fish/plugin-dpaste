@@ -20,7 +20,7 @@ $ omf install dpaste
 
 ## Usage
 
-Basice usage:
+### Basic usage to pastebin:
 
 ```fish
 $ dpaste "I <3 to paste"
@@ -32,6 +32,21 @@ https://dpaste.de/ID2
 $ cat README.md | dpaste -t month
 https://dpaste.de/ID3
 ```
+
+### Github Gist Usage
+
+```fish
+$ dpaste gist -d "Your description" a.fish
+```
+
+#### Private gist
+```fish
+$ dpaste gist -d "Your description" -p my-file.fish
+```
+
+Params:
+- `-d or --desc ` Description of the gist, default "uploaded from dpaste"
+- `-p or --private ` Private gist, default public
 
 For more information see:
 

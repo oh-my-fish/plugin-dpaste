@@ -1,19 +1,13 @@
 function dpaste
   __dpaste_parse_help $argv
   or begin
-    set argv (__dpaste_parse_expires $argv)
-    if isatty
-      if [ -n $argv ]
-        if [ -f $argv ]
-          cat $argv
-        else
-          echo $argv
-        end | __dpaste_send
-      else
-        __dpaste_help
-      end
+    if test $__dpaste_keyword = 'github'
+    or contains -- -g $argv
+    or contains -- --gist $argv
+      __dpaste_gist $argv
     else
-      __dpaste_send
+      set argv (__dpaste_parse_expires $argv)
+      __dpaste_pastebin $argv
     end
   end
 end
