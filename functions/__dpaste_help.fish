@@ -6,15 +6,15 @@ function __dpaste_help
   dpaste -t onetime < README.md
   cat README.md | dpaste -t month
   dpaste  # Starts interactive mode
-  
+
 Options:
   -t --time EXPIRES  set snippet expiration time: $__dpaste_expires_choises [default: month]
 
-Github Gist:
+GitHub Gist:
   dpaste --gist -d \"Your description\" a.fish
   dpaste --gist -d \"Your description\" -p my-file.fish
 
-  -g --gist Create a Github gist
+  -g --gist Create a GitHub gist
   -p --private Create a private gist
   -d --desc Description of the gist
 
@@ -29,6 +29,7 @@ Configuration:
   Note, that sprunge.us doesn't support '-t' option.
     set dpaste_site 'sprunge.us'
 
-  You can configure it to use Github Gist always
-    set dpaste_site 'gist.github.com'"
+  You can configure it to use GitHub Gist always
+    set dpaste_site 'gist.github.com'
+    Once this is set, you will not need to add the --gist flag"
 end

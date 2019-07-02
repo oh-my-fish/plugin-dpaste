@@ -33,19 +33,20 @@ $ cat README.md | dpaste -t month
 https://dpaste.de/ID3
 ```
 
-### Github Gist Usage
+### GitHub Gist Usage
 
 ```fish
-$ dpaste gist -d "Your description" a.fish
+$ dpaste -gist -d "Your description" a.fish
 ```
 
 #### Private gist
 ```fish
-$ dpaste gist -d "Your description" -p my-file.fish
+$ dpaste -gist -d "Your description" -p my-file.fish
 ```
 
 Params:
-- `-d or --desc ` Description of the gist, default "uploaded from dpaste"
+- `-g --gist` Create a GitHub gist
+- `-d or --desc ` Description of the gist, default "uploaded from dpaste fish shell plugin"
 - `-p or --private ` Private gist, default public
 
 For more information see:
