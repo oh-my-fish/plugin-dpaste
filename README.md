@@ -9,7 +9,7 @@
 
 <br/>
 
-Package allows to quickly share text on pastebin sites dpaste.de (and similar), sprunge.us.
+Package allows to quickly share text on pastebin sites dpaste.org (and similar), sprunge.us.
 
 ## Install
 
@@ -24,13 +24,13 @@ $ omf install dpaste
 
 ```fish
 $ dpaste "I <3 to paste"
-https://dpaste.de/ID0
+https://dpaste.org/ID0
 $ dpaste -t week README.md
-https://dpaste.de/ID1
+https://dpaste.org/ID1
 $ dpaste -t onetime < README.md
-https://dpaste.de/ID2
+https://dpaste.org/ID2
 $ cat README.md | dpaste -t month
-https://dpaste.de/ID3
+https://dpaste.org/ID3
 ```
 
 ### GitHub Gist Usage
